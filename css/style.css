@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f2;
+    color: #1f2d24;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1b4332;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #b7e4c7;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 75vh;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(135deg, #d8f3dc, #f4f7f2);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 2.8rem;
+    color: #1b4332;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #2d6a4f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #40916c;
+}
+
+/* Sections */
+section {
+    padding: 55px 8%;
+}
+
+section h2 {
+    color: #1b4332;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+/* Mission */
+.mission {
+    background-color: white;
+    text-align: center;
+}
+
+.mission p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services */
+.services {
+    background-color: #eef6ee;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+    flex: 1;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    border-top: 6px solid #52b788;
+}
+
+.card h3 {
+    color: #2d6a4f;
+    margin-bottom: 12px;
+}
+
+/* Why Us */
+.why-us {
+    background-color: white;
+}
+
+.why-us ul {
+    margin-left: 25px;
+}
+
+.why-us li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #ffdd57;
+    outline-offset: 3px;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 6%;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
+
+/* Contact Form */
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #b7c9bd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2d6a4f;
+}
