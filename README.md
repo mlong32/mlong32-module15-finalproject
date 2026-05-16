@@ -14,7 +14,7 @@ The website was developed using HTML5, CSS3, and JavaScript while following mode
 
 GitHub Pages URL:
 
-https://github.com/mlong32/mlong32-module15-finalproject.git
+https://mlong32.github.io/mlong32-module15-finalproject/
 
 ---
 
